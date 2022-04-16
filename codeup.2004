@@ -1,0 +1,2 @@
+main(){int x,y,a,b,i,j,w,q;scanf("%d%d%d%d",&x,&y,&a,&b);for(i=0;i<x;i++)for(q=0;q<a;q++){for(j=0;j<y;j++)for(w=0;w<b;w++){printf("%c",(i+j)%2?'.':'X');}printf("\n");}}
+
