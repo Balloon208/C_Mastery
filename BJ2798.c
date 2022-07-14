@@ -2,7 +2,7 @@
 
 int main()
 {
-    int arr[101]={}, n, m, max=0, sum;
+    int arr[101]={0, }, n, m, max=0, sum;
     scanf("%d %d", &n, &m);
     
     for(int i=0; i<n; i++)
