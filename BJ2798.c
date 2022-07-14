@@ -10,7 +10,7 @@ int main()
         scanf("%d", &arr[i]);
     }
     
-    // 모든 경유의 수 찾기 
+    // 모든 경우의 수 찾기 
     for(int i=0; i<n; i++)
     {
         for(int j=i+1; j<n; j++)
