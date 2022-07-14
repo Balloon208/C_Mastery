@@ -1,3 +1,8 @@
+// 문제 풀이방법 : 0의 개수 : dzero[n]=dzero[n-2]+dzero[n-1]
+// 문제 풀이방법 : 1의 개수 : done[n]=done[n-2]+done[n-1]
+
+// 시간이 매우매우 부족하므로 DP 기법을 이용하여 푼다. (피보나치 40 > int 범위)
+
 #include <stdio.h>
 
 long long int zero=0, one=0;
