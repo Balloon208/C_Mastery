@@ -12,7 +12,7 @@ int compare(const void *a, const void *b) // qsort 에서 쓸 정렬 함수
 
 int main()
 {
-    int arr[1000001]={}, n;
+    int arr[1000001]={0, }, n;
     scanf("%d", &n);
     for(int i=0; i<n; i++)
     {
