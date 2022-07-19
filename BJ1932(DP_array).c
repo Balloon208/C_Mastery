@@ -38,7 +38,7 @@ int main()
 
     for(int i=1; i<=h; i++)
     {
-        if(mx<DP[h][i]) mx=DP[h][i]; // 맨 아래쪽에서 최대를 구함.
+        if(mx<DP[h][i]) mx=DP[h][i]; // 맨 아래쪽에서 최대를 구한다.
     }
 
     printf("%d", mx);
