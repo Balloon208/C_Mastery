@@ -38,5 +38,4 @@ int main()
             if(arr[j].rank==i) printf("%s\n", arr[j].name);
         }
     }
-
 }
