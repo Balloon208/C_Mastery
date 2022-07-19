@@ -11,7 +11,7 @@
 
 int main()
 {
-    long long dp[91]={};
+    long long dp[91]={0, };
 
     dp[0]=0;
     dp[1]=1;
