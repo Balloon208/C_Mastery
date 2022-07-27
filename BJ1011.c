@@ -79,7 +79,7 @@ void solution()
 int main()
 {
     long long t;
-    scanf("%lld", &t);
+    scanf("%lld",&t);
     for(int i=0; i<t; i++)
     {
         solution();
