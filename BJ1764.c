@@ -23,33 +23,33 @@ void binsearch(int n, char key[])
     return;
 }
 
-int compare(const void a, const voidb)
+int compare(const void *a, const void *b)
 {
-    return strcmp((char )a, (char)b);
+    return strcmp((char *)a, (char *)b);
 }
 
 int main()
 {
-    char findname[20];
+	char findname[20];
 
     int n, m;
     scanf("%d %d", &n, &m);
 
     for(int i=0; i<n; i++)
     {
-        scanf("%s", name[i]);
+        scanf("%s", name[i]); // 이름 받기
     }
 
-    qsort(name, n, sizeof(name[0]), compare);
+    qsort(name, n, sizeof(name[0]), compare); // 이분탐색을 위한 정렬
 
     for(int i=0; i<m; i++)
     {
-        scanf("%s", findname);
-        binsearch(n, findname);
+        scanf("%s", findname); // 찾을 이름을 입력 받음
+        binsearch(n, findname); // 이분탐색으로 찾는다.
     }
 
-    qsort(answer, cnt, sizeof(answer[0]), compare);
-
+    qsort(answer, cnt, sizeof(answer[0]), compare); // 답을 정렬한다.
+    
     printf("%d\n", cnt);
     for(int i=0; i<cnt; i++)
     {
