@@ -72,7 +72,7 @@ void bfs(int start, vector<int>graph[], bool visited[])
     */
     queue<int> q;
     q.push(start); // 시작 지점을 큐에 넣음
-    visited[start]=true; // 해당 지점을 방문한다
+    visited[start]=true; // 해당 지점을 방문한다.
 
     while(!q.empty()) // 큐가 빌 때 까지
     {
