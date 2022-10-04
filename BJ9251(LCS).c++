@@ -1,14 +1,4 @@
-/*
-ASAG
-SWAG
 
-  0 A S A G
-0 0 0 0 0 0
-S 0 0 1 1 1
-W 0 0 1 1 1
-A 0 0 1 2 2
-G 0 0 1 2 3
-*/
 
 #include <iostream>
 #include <string>
