@@ -1,30 +1,24 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
-class AAA
+
+void fibo(int n)
 {
-private:
-	int num1;
-public:
-	virtual void Func1() { cout<<"Func1"<<endl; }
-	void Func2() { cout<<"Func2"<<endl; }
-};
+    int num1 = 0;
+    int num2 = 1;
 
-class BBB: public AAA
+        for(int i=0; i<n; i++) // 이미 두번의 과정을 거쳤으므로 n-2번 반복한다.
+        {
+            int sum = num1+num2;
+            printf("%d ", sum);
+            num1=num2;
+            num2=sum;
+        }
+
+
+}
+int main()
 {
-private:
-	int num2;
-public:
-	virtual void Func1() { cout<<"BBB::Func1"<<endl; }
-	void Func3() { cout<<"Func3"<<endl; }
-};
-
-int main(void)
-{
-	AAA * aptr=new AAA();
-	aptr->Func1();
-
-	BBB * bptr=new BBB();
-	bptr->Func1();
-	return 0;
+  int n;
+  scanf("%d", &n);
+  fibo(n);
 }

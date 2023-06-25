@@ -1,4 +1,4 @@
 # depslib dependency file v1.0
-1687486977 source:c:\users\user\desktop\codeup mastery\solve\main.cpp
-	<iostream>
+1687703950 source:c:\users\user\desktop\codeup mastery\solve\main.cpp
+	<stdio.h>
 
