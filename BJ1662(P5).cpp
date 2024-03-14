@@ -5,7 +5,7 @@
 
 using namespace std;
 
-priority_queue<pair<long long, pair<int, int>>> pq; // ºñ¿ë, ³ëµå, Æ÷Àå
+priority_queue<pair<long long, pair<int, int>>> pq; // ë¹„ìš©, ë…¸ë“œ, í¬ì¥
 long long cost[10010][21];
 long long n, m, k, a, b, t;
 vector<pair<int, int>> v[10010];
@@ -36,7 +36,7 @@ long long dijkstra(int start)
         int cnt = pq.top().second.second;
         pq.pop();
 
-        if(ccost > cost[cnode][cnt]) // ÇöÀç °è»ê°ªÀÌ ´õ Å©¸é ÆĞ½º
+        if(ccost > cost[cnode][cnt]) // í˜„ì¬ ê³„ì‚°ê°’ì´ ë” í¬ë©´ íŒ¨ìŠ¤
         {
             continue;
         }
@@ -46,14 +46,14 @@ long long dijkstra(int start)
             nnode = v[cnode][i].first;
             ncost = v[cnode][i].second + ccost;
 
-            if(cnt < k) // Æ÷Àåµµ·Î°¡ ³²¾ÆÀÖÀ¸¸é ºñ¿ëÀÌ 0ÀÌ Ãß°¡ µÇ´Ï º»ÀÎ ³ëµåÀÇ °ªÀ¸·Î °¡º»´Ù
+            if(cnt < k) // í¬ì¥ë„ë¡œê°€ ë‚¨ì•„ìˆìœ¼ë©´ ë¹„ìš©ì´ 0ì´ ì¶”ê°€ ë˜ë‹ˆ ë³¸ì¸ ë…¸ë“œì˜ ê°’ìœ¼ë¡œ ê°€ë³¸ë‹¤
             {
-                if(cost[nnode][cnt+1] == -1) // ÃÊ±âÈ­°ªÀÌ¸é
+                if(cost[nnode][cnt+1] == -1) // ì´ˆê¸°í™”ê°’ì´ë©´
                 {
                     cost[nnode][cnt+1] = ccost;
                     pq.push({-ccost, {nnode, cnt+1}});
                 }
-                if(cost[nnode][cnt+1] > ccost) // ´õ ½Î´Ù¸é
+                if(cost[nnode][cnt+1] > ccost) // ë” ì‹¸ë‹¤ë©´
                 {
                     cost[nnode][cnt+1] = ccost;
                     pq.push({-ccost, {nnode, cnt+1}});
